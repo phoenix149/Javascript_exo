@@ -163,15 +163,69 @@
 
 // Exercice 2-3 Boucles :
 
-let iN = parseInt(prompt("Saisir un nombre entier"))
-let iNb = 0;
-// A partir de l'exercice 3
-let iSnbe = 0;
-let i_Anb = 0;
+// let iN = parseInt(prompt("Saisir un nombre entier"))
+// let iNb = 0;
+// // A partir de l'exercice 3
+// let iSnbe = 0;
+// let i_Anb = 0;
 
-while (iNb < iN) {
-    console.log(iNb);
-    iNb++;
-     }
-iSnbe = ((iNb-1) * iN) / 2;
-console.log("la somme des entiers inférieur au nombre que vous avez saisi est de : " + iSnbe);
+// while (iNb < iN) {
+//     console.log(iNb);
+//     iNb++;
+//      }
+// iSnbe = ((iNb-1) * iN) / 2;
+// console.log("la somme des entiers inférieur au nombre que vous avez saisi est de : " + iSnbe);
+
+//Exercice 4 Boucles :
+
+// let iNb_1 = parseInt(prompt("Saisir un nombre entier"));
+// let iNb_2 = parseInt(prompt("Veuillez saisir un deuxième nombre entier"));
+// let somme = 0;
+
+// if (iNb_1 > iNb_2) {
+//     while (iNb_2 < iNb_1) {
+//         console.log(iNb_2);
+//         somme += iNb_2;
+//         iNb_2++;
+//     }
+//     console.log("La somme des entiers que vous avez saisi entre votre nombre 2 et votre nombre 1 est de :" +somme);
+
+// }
+// else {
+//         while (iNb_1 < iNb_2) {
+//             console.log(iNb_1);
+//             somme += iNb_1;
+//             iNb_1++;
+//         }
+//         console.log("La somme des entiers que vous avez saisi entre votre nombre 1 et votre nombre 2 est de :" +somme);
+//     }
+
+//Exercice 5 Boucles :
+
+let iNb;
+let i_Compteur = parseInt(0);
+let i_Somme = parseInt(0);
+let i_Moyenne = parseFloat(0);
+let iNb_Max = parseInt(0);
+let iNb_Mini = parseInt(0);
+
+if (iNb_Mini == 0) {
+    iNb_Mini = iNb;
+}
+
+while (iNb != 0){
+    iNb= parseInt(prompt("Saisir un nombre"));
+    if (iNb>iNb_Max) {
+        iNb_Max = iNb;
+    }
+    else if (iNb_Mini => iNb) {
+        iNb_Mini = iNb;
+    }
+    i_Somme += iNb;
+    i_Compteur++;
+    
+}
+i_Moyenne = i_Somme / (i_Compteur-1);
+console.log("La somme de tout les nombres que vous avez entrés est de : " +i_Somme+ " et la moyenne est de :" +i_Moyenne);
+console.log("L'entier le plus petit que vous avez entré est le : " + iNb_Mini + "et l'entier le plus grand est le : " + iNb_Max);
+
